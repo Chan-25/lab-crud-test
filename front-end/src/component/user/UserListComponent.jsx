@@ -54,7 +54,7 @@ class UserListComponent extends Component {
     }
 
     render() {
-        return(
+        return (
             <div>
                 <Typography variant="h4" style={style}>User List</Typography>
                 
