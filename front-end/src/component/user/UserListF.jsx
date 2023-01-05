@@ -12,13 +12,12 @@ function UserListF(props) {
 
     useEffect(() => {
         reloadUserList();
-    })
+    },[])
 
     const reloadUserList = () =>{
         ApiService.fetchUsers()
         .then( res => {
             setInfo({
-                ...info,
                 users: res.data
             })
         })
